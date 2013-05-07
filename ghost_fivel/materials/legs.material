@@ -1,0 +1,14 @@
+material compass_biped/left_leg
+{
+  receive_shadows off
+	technique
+	{
+		pass
+		{
+			ambient 0.3 0.3 0.9 1.0
+			diffuse 0.3 0.3 0.9 1.0
+			specular 0.1 0.1 0.1 1.0 12.5
+		}
+	}
+}
+

@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<model>
+  <name>atlas_no_mass</name>
+  <description>atlas_no_mass</description>
+  <version>0.2.0</version>
+  <sdf>atlas_no_mass.urdf</sdf>
+  <author>
+    <name>Jonathan Spitz</name>
+    <email>lothas@gmail.com</email>
+  </author>
+  <description>
+    Atlas robot with no upper body mass
+  </description>
+</model>

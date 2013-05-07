@@ -1,0 +1,29 @@
+ghost_fivel:
+  statistics_time_window_size: 1.0
+  type: "robot_mechanism_controllers/JointTrajectoryActionController"
+  joints:
+    - left_hip
+    - left_ankle
+    - right_hip
+    - right_ankle
+  gains:
+    left_hip:    {p:  400.0,   d:   60.0,  i: 0.0,    i_clamp:    0.0}
+    left_ankle:  {p:  400.0,   d:   10.0,  i: 0.0,    i_clamp:    0.0}
+    right_hip:   {p:  400.0,   d:   60.0,  i: 0.0,    i_clamp:    0.0}
+    right_ankle: {p:  400.0,   d:   10.0,  i: 0.0,    i_clamp:    0.0 }
+  joint_trajectory_action_node:
+    joints:
+      - left_hip
+      - left_ankle
+      - right_hip
+      - right_ankle
+    constraints:
+      goal_time: 0.0
+      left_hip:
+        goal: 0.02
+      left_ankle:
+        goal: 0.02
+      right_hip:
+        goal: 0.02
+      right_ankle:
+        goal: 0.02
