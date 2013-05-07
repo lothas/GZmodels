@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<model>
+  <name>ghost_compass_biped</name>
+  <version>0.1.0</version>
+  <author>
+    <name>Jonathan Spitz</name>
+    <email>spitz@technion.ac.il</email>
+  </author>
+  <sdf>model.urdf</sdf>
+  <description>
+    Simple compass biped model (2 overlapping legs that can't collide with each other)
+  </description>
+</model>

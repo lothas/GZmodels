@@ -1,0 +1,39 @@
+five_link_walker:
+  statistics_time_window_size: 1.0
+  type: "robot_mechanism_controllers/JointTrajectoryActionController"
+  joints:
+    - inner_hip
+    - inner_ankle
+    - left_hip
+    - left_ankle
+    - right_hip
+    - right_ankle
+  gains:
+    inner_hip: {p:  200.0,   d:   50.0,  i: 0.0,     i_clamp:    0.0}
+    inner_ankle: {p: 300.0,  d:  10.0,  i: 0.0,      i_clamp:    0.0 }
+    left_hip: {p:  200.0,   d:   50.0,  i: 0.0,     i_clamp:    0.0}
+    left_ankle: {p: 300.0,   d:  10.0,  i: 0.0,     i_clamp:    0.0}
+    right_hip: {p:  200.0,   d:   50.0,  i: 0.0,    i_clamp:    0 }
+    right_ankle: {p: 300.0,   d:  10.0,  i: 0.0,    i_clamp:    0 }
+  joint_trajectory_action_node:
+    joints:
+      - inner_hip
+      - inner_ankle
+      - left_hip
+      - left_ankle
+      - right_hip
+      - right_ankle
+    constraints:
+      goal_time: 0.0
+      inner_hip:
+        goal: 0.02
+      inner_ankle:
+        goal: 0.02
+      left_hip:
+        goal: 0.02
+      left_ankle:
+        goal: 0.02
+      right_hip:
+        goal: 0.02
+      right_ankle:
+        goal: 0.02

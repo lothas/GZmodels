@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<model>
+  <name>five_link_walker</name>
+  <version>0.1.0</version>
+  <author>
+    <name>Jonathan Spitz</name>
+    <email>spitz@technion.ac.il</email>
+  </author>
+  <sdf>model.urdf</sdf>
+  <description>
+    2 planar compass biped walkers side by side with feet and a torso
+  </description>
+</model>

@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<model>
+  <name>crane</name>
+  <description>crane</description>
+  <version>0.2.0</version>
+  <sdf>crane.urdf</sdf>
+  <author>
+    <name>Jonathan Spitz</name>
+    <email>lothas@gmail.com</email>
+  </author>
+  <description>
+    This model is a support crane for the Atlas robot
+  </description>
+</model>
