@@ -1,0 +1,33 @@
+compass_biped_controller:
+  type: "robot_mechanism_controllers/JointTrajectoryActionController"
+  joints:
+    - right_hip
+    - left_hip
+    - right_ankle
+    - left_ankle
+    - inner_ankle
+  gains:
+    right_hip:   {p: 50.0, d: 1.0, i:   0.0, i_clamp:    0.0}
+    left_hip:    {p: 50.0, d: 1.0, i:   0.0, i_clamp:    0.0}
+    right_ankle: {p: 50.0, d: 1.0, i:   0.0, i_clamp:    0.0}
+    left_ankle:  {p: 50.0, d: 1.0, i:   0.0, i_clamp:    0.0}
+    inner_ankle: {p: 50.0, d: 1.0, i:   0.0, i_clamp:    0.0}
+  joint_trajectory_action_node:
+    joints:
+      - right_hip
+      - left_hip
+      - right_ankle
+      - left_ankle
+      - inner_ankle
+    constraints:
+      goal_time: 0.0
+      right_hip:
+        goal: 0.02
+      left_hip:
+        goal: 0.02
+      right_ankle:
+        goal: 0.02
+      left_ankle:
+        goal: 0.02
+      inner_ankle:
+        goal: 0.02

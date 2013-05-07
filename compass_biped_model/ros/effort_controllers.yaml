@@ -1,0 +1,19 @@
+right_ankle_effort_controller:
+  type: robot_mechanism_controllers/JointEffortController
+  joint: right_ankle
+
+left_ankle_effort_controller:
+  type: robot_mechanism_controllers/JointEffortController
+  joint: left_ankle
+
+inner_ankle_effort_controller:
+  type: robot_mechanism_controllers/JointEffortController
+  joint: inner_ankle
+
+right_hip_effort_controller:
+  type: robot_mechanism_controllers/JointEffortController
+  joint: right_hip
+
+left_hip_effort_controller:
+  type: robot_mechanism_controllers/JointEffortController
+  joint: left_hip

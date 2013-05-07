@@ -14,7 +14,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="-1 0 0.05"/>
       <geometry>
-        <box size="2 .1 .1" />
+        <box size="2 .0 .0" />
       </geometry>
     </visual>
     <collision>
@@ -34,7 +34,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 -0.61"/>
       <geometry>
-        <box size="0.1 0.1 1.22" />
+        <box size="0 0 1.22" />
       </geometry>
     </visual>
     <collision>
@@ -53,7 +53,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 -0.61"/>
       <geometry>
-        <box size="0.1 0.1 1.22" />
+        <box size="0 0 1.22" />
       </geometry>
     </visual>
     <collision>
@@ -73,7 +73,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="-1 0 0.05"/>
       <geometry>
-        <box size="2 0.1 0.1" />
+        <box size="2 0 0" />
       </geometry>
     </visual>
     <collision>
@@ -93,7 +93,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 -0.61"/>
       <geometry>
-        <box size="0.1 0.1 1.22" />
+        <box size="0 0 1.22" />
       </geometry>
     </visual>
     <collision>
@@ -112,7 +112,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 -0.61"/>
       <geometry>
-        <box size="0.1 0.1 1.22" />
+        <box size="0 0 1.22" />
       </geometry>
     </visual>
     <collision>
@@ -132,7 +132,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.25"/>
       <geometry>
-        <box size="0.1 0.1 .5" />
+        <box size="0 0 .5" />
       </geometry>
     </visual>
     <collision>
@@ -151,7 +151,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.25"/>
       <geometry>
-        <box size="0.1 0.1 .5" />
+        <box size="0 0 .5" />
       </geometry>
     </visual>
     <collision>
@@ -171,7 +171,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.25"/>
       <geometry>
-        <box size="0.1 0.1 .5" />
+        <box size="0 0 .5" />
       </geometry>
     </visual>
     <collision>
@@ -190,7 +190,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.25"/>
       <geometry>
-        <box size="0.1 0.1 .5" />
+        <box size="0 0 .5" />
       </geometry>
     </visual>
     <collision>
@@ -210,7 +210,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.05"/>
       <geometry>
-        <box size="0.1 0.7 0.1" />
+        <box size="0 0.7 0" />
       </geometry>
     </visual>
     <collision>
@@ -342,30 +342,6 @@
     <fdir1>1 0 0</fdir1>
     <maxVel>0.0</maxVel>
     <minDepth>0.001</minDepth>
-  </gazebo>
-
-
-  <gazebo reference="r_base">
-    <!-- contact sensor -->
-    <sensor name="r_base_contact_sensor" type="contact">
-      <update_rate>1000.0</update_rate>
-      <always_on>1</always_on>
-      <contact>
-        <collision>r_base_collision</collision>
-        <topic>/r_base_contact</topic>
-      </contact>
-    </sensor>
-  </gazebo>
-  <gazebo reference="l_base">
-    <!-- contact sensor -->
-    <sensor name="l_base_contact_sensor" type="contact">
-      <update_rate>1000.0</update_rate>
-      <always_on>1</always_on>
-      <contact>
-        <collision>l_base_collision</collision>
-        <topic>/l_base_contact</topic>
-      </contact>
-    </sensor>
   </gazebo>
 
   <!--
